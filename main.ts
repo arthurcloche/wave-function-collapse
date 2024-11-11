@@ -64,8 +64,8 @@
     const init = () => {
       setCanvas();
   
-      WIDTH = 180;
-      HEIGHT = 180;
+      WIDTH = 360;
+      HEIGHT = 360;
       size = WIDTH / DIM;
       const board = PLAY;
   
@@ -285,7 +285,7 @@
       ctx.restore();
   
       ctx.save();
-      ctx.translate(10 + DIM * 2 * 10 + 10, 10);
+      ctx.translate(10 + size * 10 , 10);
       ctx.lineWidth = 1;
   
       for (let i = 0; i < grid.length; i++) {
